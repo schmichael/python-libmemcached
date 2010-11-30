@@ -8,10 +8,8 @@ setup(
 		description="python memcached client wrapped on libmemcached",
 		maintainer="subdragon",
 		maintainer_email="subdragon@gmail.com",
-
         requires = ['pyrex'],
-		# This assumes that libmemcache is installed with base /usr/local
-        ext_modules=[Extension('cmemcached', ['cmemcached.pyx'],
+        ext_modules=[Extension('cmemcached', ['cmemcached.c'],
             libraries=['memcached'],
         )],
         test_suite="cmemcached_test",
