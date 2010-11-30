@@ -1,8 +1,7 @@
 import cmemcached
 import unittest
-import pickle
 
-MEMCACHED_HOSTS = ['localhost:9130']
+MEMCACHED_HOSTS = ['localhost:11211']
 
 class TestCmemcached(unittest.TestCase):
 
